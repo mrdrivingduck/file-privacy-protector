@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: iot.zjt.protector.FileProtector
+Class-Path: lib/encryption-machine-1.1.jar
