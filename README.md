@@ -27,7 +27,7 @@ Download runnable JAR file from [release](https://github.com/mrdrivingduck/file-
 $ java -jar file-protector.jar encrypt ./
 ```
 
-Enter the password to generate secret key and encrypt the file filtered by `FileFilter`.
+Enter the password to generate secret key and encrypt the files filtered by `FileFilter`.
 
 ### Decryption
 
@@ -35,7 +35,7 @@ Enter the password to generate secret key and encrypt the file filtered by `File
 $ java -jar file-protector.jar decrypt ./
 ```
 
-Enter the password to generate secret key and decrypt the file filtered by `FileFilter`.
+Enter the password to generate secret key and decrypt the files filtered by `FileFilter`.
 
 ## Working Mode
 

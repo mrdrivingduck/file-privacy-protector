@@ -1,9 +1,9 @@
 package iot.zjt.protector;
 
-import java.io.Console;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.Scanner;
 
 import iot.zjt.encrypt.machine.SymEncrpMachine;
 import iot.zjt.encrypt.machine.SymEncrpMachine.SymAlgs;
@@ -29,39 +29,39 @@ public class FileProtector {
 
         // Password for generating key
         System.out.println("Pls enter your password:");
-        Console console = System.console();
-        String password = new String(console.readPassword());
+        Scanner scanner = new Scanner(System.in);
+        String password = scanner.nextLine();
+        scanner.close();
+        // Console console = System.console();
+        // String password = new String(console.readPassword());
 
         File dir = new File(directory);
         if (dir.isDirectory()) {
-            File[] allFiles = dir.listFiles();
+            DiaryFilter diaryFilter = new DiaryFilter();
+            File[] allFiles = dir.listFiles(diaryFilter);
             System.out.println("In " + dir.getName() + ":");
-            int count = 0;
             for (int i = 0; i < allFiles.length; i++) {
-                if (FileFilter.filter(allFiles[i])) {
-                    if (isEncrypt) {
-                        System.out.println(
-                            "Encrypting " +
-                            allFiles[i].getName() +
-                            " ..."
-                        );
-                        FileProtector.encryptFile(
-                            allFiles[i], password, SymAlgs.AES);
-                        System.out.println("Encryption done.");
-                    } else {
-                        System.out.println(
-                            "Decrypting" +
-                            allFiles[i].getName() +
-                            " ..."
-                        );
-                        FileProtector.decryptFile(
-                            allFiles[i], password, SymAlgs.AES);
-                        System.out.println("Decryption done.");
-                    }
-                    count++;
+                if (isEncrypt) {
+                    System.out.println(
+                        "Encrypting " +
+                        allFiles[i].getName() +
+                        " ..."
+                    );
+                    FileProtector.encryptFile(
+                        allFiles[i], password, SymAlgs.AES);
+                    System.out.println("Encryption done.");
+                } else {
+                    System.out.println(
+                        "Decrypting" +
+                        allFiles[i].getName() +
+                        " ..."
+                    );
+                    FileProtector.decryptFile(
+                        allFiles[i], password, SymAlgs.AES);
+                    System.out.println("Decryption done.");
                 }
             }
-            System.out.println("Working on: " + count + " jobs, done.");
+            System.out.println("Working on: " + allFiles.length + " jobs, done.");
         }
     }
 
