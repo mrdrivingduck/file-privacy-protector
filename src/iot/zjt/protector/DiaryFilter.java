@@ -1,12 +1,14 @@
+/**
+ * @author Mr Dk.
+ * @version 2019-05-13
+ * 
+ * For filtering diary files of markdown format
+ */
+
 package iot.zjt.protector;
 
 import java.io.File;
 import java.io.FileFilter;
-
-/**
- * @author Mr Dk.
- * @version 2019-05-13
- */
 
 public class DiaryFilter implements FileFilter {
 

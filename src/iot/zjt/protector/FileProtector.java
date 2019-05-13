@@ -1,3 +1,10 @@
+/**
+ * @author Mr Dk.
+ * @version 2019-05-13
+ * 
+ * Main class for encrypt/decrypt files in a directory
+ */
+
 package iot.zjt.protector;
 
 import java.io.File;
@@ -8,13 +15,6 @@ import java.util.Scanner;
 import iot.zjt.encrypt.machine.SymEncrpMachine;
 import iot.zjt.encrypt.machine.SymEncrpMachine.SymAlgs;
 import iot.zjt.encrypt.util.CoderUtil;
-
-/**
- * @author Mr Dk.
- * @version 2019-05-13
- * 
- * For encrypt/decrypt files in a directory
- */
 
 public class FileProtector {
 
