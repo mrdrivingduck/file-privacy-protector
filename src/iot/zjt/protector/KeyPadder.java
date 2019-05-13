@@ -5,6 +5,8 @@ import iot.zjt.encrypt.machine.SymEncrpMachine.SymAlgs;
 /**
  * @author Mr Dk.
  * @version 2019-05-12
+ * 
+ * To pad or cut a key if it is not in proper length
  */
 
 public class KeyPadder {
