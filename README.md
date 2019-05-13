@@ -1,7 +1,7 @@
 # file-privacy-protector
 🤐 Code for file encryption/decryption.
 
-Created By : Mr Dk.
+Created by : Mr Dk.
 
 2019.05.13 @Nanjing, Jiangsu, China
 
