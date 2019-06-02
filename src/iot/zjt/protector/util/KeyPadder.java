@@ -5,7 +5,7 @@
  * To pad or cut a key if it is not in proper length
  */
 
-package iot.zjt.protector;
+package iot.zjt.protector.util;
 
 import iot.zjt.encrypt.machine.SymEncrpMachine.SymAlgs;
 

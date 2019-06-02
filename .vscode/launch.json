@@ -2,17 +2,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "iot.zjt.protector.Test",
-            "projectName": "EncryptionFramework"
-        },
-        {
-            "type": "java",
             "name": "CodeLens (Launch) - FileProtector",
             "request": "launch",
             "mainClass": "iot.zjt.protector.FileProtector",
-            "projectName": "EncryptionFramework",
+            "projectName": "FileEncrypt",
             "args": "encrypt ./ zhangjt1997"
         }
     ]
