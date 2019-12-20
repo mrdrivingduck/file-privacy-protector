@@ -6,7 +6,7 @@
             "request": "launch",
             "mainClass": "iot.zjt.protector.FileProtector",
             "projectName": "FileEncrypt",
-            "args": "encrypt ./ zhangjt1997"
+            "args": "decrypt '/d/local repositories/emotions' 123456"
         }
     ]
 }
