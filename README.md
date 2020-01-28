@@ -1,4 +1,5 @@
 # file-privacy-protector
+
 🤐 Code for file encryption/decryption.
 
 Created by : Mr Dk.
@@ -44,6 +45,10 @@ Enter the password to generate secret key and decrypt the files filtered by `Fil
 * File filter - All `.md` files except `README.md`
 
 Can be configured in the code.
+
+## License
+
+Copyright © 2019-2020, Jingtang Zhang. ([MIT License](LICENSE))
 
 ---
 
